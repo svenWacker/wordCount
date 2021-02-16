@@ -3,7 +3,6 @@
 
 const sentence =
   "This is the assignment to count the words of a sentence in three ways";
-function countWords(str) {
-  return str.trim().split(/\s+/).length;
-}
-console.log(countWords(sentence));
+const countWords = (str) =>
+  console.log(`The sentence has ${str.trim().split(/\s+/).length} words`);
+countWords(sentence);
