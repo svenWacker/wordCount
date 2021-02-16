@@ -17,3 +17,14 @@ const sentence =
 // console.log("Word count is = " + sentence.split(" ").length);
 
 //third branch
+function wordCountUsingFor(str) {
+  let wordCount = 1;
+  for (let i = 0; i < str.length; i++) {
+    if (str.charAt(i) == " " && str.charAt(i + 1) != "") {
+      wordCount++;
+    }
+  }
+  console.log(`There are ${wordCount} words`);
+}
+wordCountUsingFor(sentence);
+// wordCountUsingFor("     ");
