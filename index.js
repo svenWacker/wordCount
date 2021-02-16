@@ -2,4 +2,8 @@ const sentence =
   "This is the assignment to count the words of a sentence in three ways";
 
 // second branch
-console.log("Word count is = " + sentence.split(" ").length);
+function wordCountUsingMatch(str) {
+  let matches = str.match(/[\w\d\’\'-]+/gi);
+  return matches ? matches.length : 0;
+}
+console.log(wordCountUsingMatch(sentence));
